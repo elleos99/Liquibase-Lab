@@ -12,6 +12,11 @@
             <column name="AGE" type="INT(5)"/>
             <column name="ISBARKING" type="BOOL"/>
         </createTable>
+        <rollback>
+            <dropTable  tableName="DOGGY"/>
+        </rollback>
     </changeSet>
+
+    
 
 </databaseChangeLog>
